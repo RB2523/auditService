@@ -100,4 +100,7 @@ cache.audit.max-size=1000
 # Logging
 Every request is assigned a unique Request ID.
 
+---
+Built for Digital Heroes Training Task
+
 
