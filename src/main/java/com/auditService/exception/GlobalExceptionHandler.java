@@ -44,9 +44,9 @@ public class GlobalExceptionHandler {
 	
 	
 	// all 500 + whatever error left handled here
-//	@ExceptionHandler(Exception.class)
-//	public ResponseEntity<AuditErrorResponse> globalExceptionHandler(Exception e) {
-//		System.out.println(e.toString());
-//		return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(new AuditErrorResponse(INTERNAL_SERVER_ERROR_MESSAGE));
-//	}
+	@ExceptionHandler(Exception.class)
+	public ResponseEntity<AuditErrorResponse> globalExceptionHandler(Exception e) {
+		System.out.println(e.toString());
+		return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(new AuditErrorResponse(INTERNAL_SERVER_ERROR_MESSAGE));
+	}
 }
